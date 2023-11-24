@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="Detail.css">
+
+
+</head>
+
+<body>
+
+
+    <div class="detail">
+
+        <div class="detail__breadcrumbs">
+            <li class="breadcrumbs__items"><a href="Home.html">Trang chủ</a></li>
+            <li class="breadcrumbs__items"><a href="Catelogy.html">Cửa hàng</a></li>
+            <li class="breadcrumbs__items">
+                Levents® Classic Regular Polo
+            </li>
+        </div>
+
+        <div class="detail__main">
+            <div class="detail__main__img-list">
+                <img id="img_list_1" onclick="ChangeImg(this.URL)" src="imgDetail/img1.jpg" alt="">
+                <img id="img_list_2" onclick="ChangeImg(this.URL)" src="imgDetail/img2.jpg" alt="">
+                <img id="img_list_3" onclick="ChangeImg(this)" src="imgDetail/img3.jpg" alt="">
+                <img id="img_list_4" onclick="ChangeImg(this)" src="imgDetail/img4.jpg" alt="">
+            </div>
+            <div class="detail__main__img">
+                <img id="img_main" src="imgDetail/img1.jpg" alt="">
+            </div>
+            <div class="detail__main__content">
+                <div class="detail__main__content__info">
+                    <div class="detail__main__content__title">
+                        <h1>Levents® Spooky Tee</h1>
+                    </div>
+                    <div class="detail__main__content__price">
+                        <p id="pro_price">380,000 vnđ</p>
+                    </div>
+                    <div class="detail__main__content__type">
+                        <p>Màu sắc: Levents® Spooky Tee/ White</p>
+                        <div class="detail__main__content__type__color">
+                            <!-- 60x60 -->
+                            <div class="img-type" onclick="getElementById('img1').style.opacity='1',
+                            getElementById('img2').style.opacity='0.6'">
+                                <img id="img1" src="imgDetail/blackType.jpg" alt="">
+                            </div>
+                            <div class="img-type" onclick="getElementById('img2').style.opacity='1',
+                            getElementById('img1').style.opacity='0.6'">
+                                <img id="img2" src="imgDetail/whiteType.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="detail__main__content__type-size">
+                        <p>Size</p>
+
+                        <input type="radio" name="size1" value="size1" checked>
+                        <label class="active" id="size1" for="size1">Size1</label>
+                        <input type="radio" name="size2" value="size2" checked>
+                        <label class="active" id="size2" for="size2">Size2</label>
+                        <input type="radio" name="size3" value="size3" checked>
+                        <label class="active" id="size3" for="size3">Size3</label>
+
+
+                    </div>
+                    <div class="detail__main__content__slot">
+                        <p>Số lượng</p>
+                        <div class="detail__main__content__slot__wrap">
+                            <span class="minus">-</span>
+                            <span class="number">1</span>
+                            <span class="plus">+</span>
+                        </div>
+                    </div>
+                    <div class="detail__main__content__add-items">
+                        <P>Thêm vào giỏ</P>
+                        <i onclick="ChangeIcon(this)" class="fa-regular fa-heart"></i>
+                    </div>
+                    <br>
+                    <hr>
+                </div>
+                <div class="detial__main__content__more-info">
+                    <div class="detial__main__content__more-info__items">
+                        <h1 onclick="ShowDetail()" class="show_detail_info">Thông tin</h1>
+                        <p class="show-info">
+                            Levents® Spooky Tee <br><br>
+
+                            Material: Lì ven Original<br>
+                            Size: 1/2/3<br>
+                            New arrival độc quyền dành riêng cho mùa Halloween lần này<br>
+                            – LEVENTS® SPOOKY TEE với 2 tone màu chính BLACK & WHITE tôn da, phù hợp với mọi giới
+                            tính.<br>
+                            Item đặc biệt lần này với form oversize cực thoải mái, kết hợp giữa họa tiết con dơi
+                            được
+                            ép<br>
+                            decal kim tuyến lấp lánh và dòng graphic được in lụa với phối màu đỏ tạo hiểu ứng nổi
+                            bật.<br>
+                            Sử dụng chất vải cao cấp chống nhăn, tạo sự thoáng mát cùng độ bền cao. Tự tin thể hiện
+                            sự<br>
+                            cá tính<br>
+                            và khác biệt của chính bạn vào mùa Halloween cùng LEVENTS® SPOOKY TEE thôi nàooo!<br>
+                            🔹Graphic con dơi được ép decal kim tuyến lấp lánh, vô cùng nổi bật<br>
+                            🔹Graphic “Being spooky is better with you” in lụa phối màu đỏ lạ mắt<br>
+                            🔹Sản xuất từ vải cao cấp dày dặn nhưng thoáng mát<br>
+                            🔹Có độ bền cao và khả năng chống nhăn giúp giữ form áo sau thời gian dài sử dụng.<br>
+                        </p>
+                        <br>
+                        <hr>
+                    </div>
+                    <div class="detial__main__content__more-info__items">
+                        <h1 onclick="ShowDetail()" class="show_detail_size">Bảng size</h1>
+
+                        <img class="show-size"
+                            src="https://levents.asia/wp-content/uploads/2023/10/SC_SA%CC%80N-OVERSIZE-TEE-2023-1000x809.jpg"
+                            alt="">
+                        <br>
+                        <hr>
+                    </div>
+                    <div class="detial__main__content__more-info__items">
+                        <h1 onclick="ShowDetail()" class="show_detail_service">Quy định đổi trả</h1>
+                        <p class="show-service">
+                            Nhằm mang lại cho bạn sự tiện lợi và những trải nghiệm tuyệt vời khi mua hàng, <br>
+                            tụi mình đã phát triển dịch vụ đổi hàng tận nơi và chính sách bảo hành.<br>
+                            <br>
+                            Tham khảo thêm thông tin về chính sách <span><b><u>tại đây</u></b></span>
+                        </p>
+                        <br>
+                        <hr>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="Detail.js"></script>
+</body>
+
+</html>
